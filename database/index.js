@@ -27,7 +27,7 @@ const addNewUser = function(userReview) {
   }
 
 
-  var query = `insert into reviews(userId, name, review, rating, date) values ("${userReview.userId}", "${userReview.userName}", "${userReview.userReview}","${userReview.userRating}", "${userReview.userReviewDate}")`
+  var query = `insert into reviews(carId, name, review, rating, date) values ("${userReview.carId}", "${userReview.userName}", "${userReview.userReview}","${userReview.userRating}", "${userReview.userReviewDate}")`
 
   connection.query(query, (err) => {
     if (err) {
