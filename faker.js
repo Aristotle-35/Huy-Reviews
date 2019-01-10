@@ -5,7 +5,7 @@ const insertIntoDb = (numOfTimes = 103) => {
   var users = [];
   for (let i = 0; i < numOfTimes; i++) {
     const user = {
-      userId: faker.random.number({
+      carId: faker.random.number({
         min: 1,
         max: 30,
       }),
